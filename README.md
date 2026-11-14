@@ -1,7 +1,5 @@
-# Android API Reference — local mirror
-> Source: https://developer.android.com/reference/packages.md.txt
-> Packages: 312
-> Generated: 2026-11-14T06:22:39.909Z
+# Android API Reference (Unofficial)
+> Source: https://developer.android.com/reference/packages
 
 - [`android`](./android/_package.md)
 - [`android.accessibilityservice`](./android.accessibilityservice/_package.md)
