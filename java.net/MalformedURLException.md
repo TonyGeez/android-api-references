@@ -1,0 +1,50 @@
+# MalformedURLException
+
+Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels)
+
+# MalformedURLException
+
+```
+open class MalformedURLException : IOException
+```
+
+| [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
+| | ↳ | [java.lang.Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html#) |||
+| | | ↳ | [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html#) ||
+| | | | ↳ | [java.net.MalformedURLException](https://developer.android.com/reference/kotlin/java/net/MalformedURLException#) |
+
+Thrown to indicate that a malformed URL has occurred. Either no legal protocol could be found in a specification string or the string could not be parsed.
+
+## Summary
+
+| Public constructors ||
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
+| [MalformedURLException](https://developer.android.com/reference/kotlin/java/net/MalformedURLException#MalformedURLException())`()` Constructs a`MalformedURLException`with no detail message. |
+| [MalformedURLException](https://developer.android.com/reference/kotlin/java/net/MalformedURLException#MalformedURLException(kotlin.String))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`MalformedURLException`with the specified detail message. |
+
+## Public constructors
+
+### MalformedURLException
+
+Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+MalformedURLException()
+```
+
+Constructs a`MalformedURLException`with no detail message. 
+
+### MalformedURLException
+
+Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+MalformedURLException(msg: String!)
+```
+
+Constructs a`MalformedURLException`with the specified detail message.
+
+| Parameters ||
+|-------|-------------------------------------------------------------------------------------------------------|
+| `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the detail message. |

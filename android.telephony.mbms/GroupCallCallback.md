@@ -1,0 +1,91 @@
+Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels)
+
+# GroupCallCallback
+
+Kotlin | [Java](https://developer.android.com/reference/android/telephony/mbms/GroupCallCallback "View this page in Java")
+
+```
+interface GroupCallCallback
+```
+
+| [android.telephony.mbms.GroupCallCallback](https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCallCallback#) |
+
+A callback class for use when the application is in a group call. The middleware will provide updates on the status of the call via this callback.
+
+## Summary
+
+| Constants ||
+|---|---|
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCallCallback#SIGNAL_STRENGTH_UNAVAILABLE:kotlin.Int` Indicates broadcast signal strength is not available for this call. |
+
+| Public methods ||
+|---|---|
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCallCallback#onBroadcastSignalStrengthUpdated(kotlin.Int)(signalStrength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Broadcast Signal Strength updated. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCallCallback#onError(kotlin.Int,%20kotlin.String)(errorCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Called by the middleware when it has detected an error condition in this group call. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCallCallback#onGroupCallStateChanged(kotlin.Int,%20kotlin.Int)(state: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, reason: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called to indicate this call has changed state. |
+
+## Constants
+
+### SIGNAL_STRENGTH_UNAVAILABLE
+
+Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels)
+
+```
+static val SIGNAL_STRENGTH_UNAVAILABLE: Int
+```
+
+Indicates broadcast signal strength is not available for this call. This may be due to the call no longer being available due to geography or timing (end of service)
+
+ Value: -1
+
+## Public methods
+
+### onBroadcastSignalStrengthUpdated
+
+Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels)
+
+```
+open fun onBroadcastSignalStrengthUpdated(signalStrength: Int): Unit
+```
+
+Broadcast Signal Strength updated. This signal strength is the BROADCAST signal strength which, depending on technology in play and it's deployment, may be stronger or weaker than the traditional UNICAST signal strength. It a simple int from 0-4 for valid levels or `https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCallCallback#SIGNAL_STRENGTH_UNAVAILABLE:kotlin.Int` if broadcast is not available for this call due to timing, geography or popularity.
+
+| Parameters ||
+|---|---|
+| `signalStrength` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is between -1 and 4 inclusive |
+
+### onError
+
+Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels)
+
+```
+open fun onError(
+    errorCode: Int, 
+    message: String?
+): Unit
+```
+
+Called by the middleware when it has detected an error condition in this group call. The possible error codes are listed in `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors`.
+
+| Parameters ||
+|---|---|
+| `errorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The error code. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors#ERROR_NO_UNIQUE_MIDDLEWARE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors#ERROR_MIDDLEWARE_LOST:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors#ERROR_MIDDLEWARE_NOT_BOUND:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors.GeneralErrors#ERROR_MIDDLEWARE_NOT_YET_READY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors.GeneralErrors#ERROR_OUT_OF_MEMORY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors.GeneralErrors#ERROR_MIDDLEWARE_TEMPORARILY_UNAVAILABLE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors.GeneralErrors#ERROR_IN_E911:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors.GeneralErrors#ERROR_NOT_CONNECTED_TO_HOME_CARRIER_LTE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors.GeneralErrors#ERROR_UNABLE_TO_READ_SIM:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors.GeneralErrors#ERROR_CARRIER_CHANGE_NOT_ALLOWED:kotlin.Int` |
+| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: A human-readable message generated by the middleware for debugging purposes. This value may be `null`. |
+
+### onGroupCallStateChanged
+
+Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels)
+
+```
+open fun onGroupCallStateChanged(
+    state: Int, 
+    reason: Int
+): Unit
+```
+
+Called to indicate this call has changed state. See `https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall#STATE_STOPPED:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall#STATE_STARTED:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall#STATE_STALLED:kotlin.Int`.
+
+| Parameters ||
+|---|---|
+| `state` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is one of the following: - `https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall#STATE_STOPPED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall#STATE_STARTED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall#STATE_STALLED:kotlin.Int` |
+| `reason` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is one of the following: - `https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall#REASON_BY_USER_REQUEST:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall#REASON_FREQUENCY_CONFLICT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall#REASON_OUT_OF_MEMORY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall#REASON_NOT_CONNECTED_TO_HOMECARRIER_LTE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall#REASON_LEFT_MBMS_BROADCAST_AREA:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCall#REASON_NONE:kotlin.Int` |

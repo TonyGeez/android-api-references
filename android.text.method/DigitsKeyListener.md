@@ -1,0 +1,248 @@
+# DigitsKeyListener
+
+Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels)
+
+# DigitsKeyListener
+
+Kotlin| [Java](https://developer.android.com/reference/android/text/method/DigitsKeyListener "View this page in Java") 
+
+```
+open class DigitsKeyListener : NumberKeyListener
+```
+
+| [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
+| ↳ | [android.text.method.MetaKeyKeyListener](https://developer.android.com/reference/kotlin/android/text/method/MetaKeyKeyListener) ||||
+| | ↳ | [android.text.method.BaseKeyListener](https://developer.android.com/reference/kotlin/android/text/method/BaseKeyListener) |||
+| | | ↳ | [android.text.method.NumberKeyListener](https://developer.android.com/reference/kotlin/android/text/method/NumberKeyListener) ||
+| | | | ↳ | [android.text.method.DigitsKeyListener](https://developer.android.com/reference/kotlin/android/text/method/DigitsKeyListener#) |
+
+For digits-only text entry
+
+<br />
+
+As for all implementations of [KeyListener](https://developer.android.com/reference/kotlin/android/text/method/KeyListener), this class is only concerned with hardware keyboards. Software input methods have no obligation to trigger the methods in this class.
+
+## Summary
+
+| Inherited constants ||
+|---|---|
+| From class [MetaKeyKeyListener](https://developer.android.com/reference/kotlin/android/text/method/MetaKeyKeyListener) |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [META_ALT_LOCKED](https://developer.android.com/reference/kotlin/android/text/method/MetaKeyKeyListener#META_ALT_LOCKED:kotlin.Int) <br /> Flag that indicates that the ALT key is locked. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [META_ALT_ON](https://developer.android.com/reference/kotlin/android/text/method/MetaKeyKeyListener#META_ALT_ON:kotlin.Int) <br /> Flag that indicates that the ALT key is on. Value equals [KeyEvent.META_ALT_ON](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#META_ALT_ON:kotlin.Int). <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [META_CAP_LOCKED](https://developer.android.com/reference/kotlin/android/text/method/MetaKeyKeyListener#META_CAP_LOCKED:kotlin.Int) <br /> Flag that indicates that the SHIFT key is locked in CAPS mode. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [META_SHIFT_ON](https://developer.android.com/reference/kotlin/android/text/method/MetaKeyKeyListener#META_SHIFT_ON:kotlin.Int) <br /> Flag that indicates that the SHIFT key is on. Value equals [KeyEvent.META_SHIFT_ON](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#META_SHIFT_ON:kotlin.Int). <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [META_SYM_LOCKED](https://developer.android.com/reference/kotlin/android/text/method/MetaKeyKeyListener#META_SYM_LOCKED:kotlin.Int) <br /> Flag that indicates that the SYM key is locked. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [META_SYM_ON](https://developer.android.com/reference/kotlin/android/text/method/MetaKeyKeyListener#META_SYM_ON:kotlin.Int) <br /> Flag that indicates that the SYM key is on. Value equals [KeyEvent.META_SYM_ON](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#META_SYM_ON:kotlin.Int). <br /> | ||
+
+| Public constructors ||
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
+| [DigitsKeyListener](https://developer.android.com/reference/kotlin/android/text/method/DigitsKeyListener#DigitsKeyListener())`()` Allocates a DigitsKeyListener that accepts the ASCII digits 0 through 9. |
+| [DigitsKeyListener](https://developer.android.com/reference/kotlin/android/text/method/DigitsKeyListener#DigitsKeyListener(kotlin.Boolean,%20kotlin.Boolean))`(`sign:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `decimal:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Allocates a DigitsKeyListener that accepts the ASCII digits 0 through 9, plus the ASCII plus or minus sign (only at the beginning) and/or the ASCII period ('.') as the decimal point (only one per field) if specified. |
+| [DigitsKeyListener](https://developer.android.com/reference/kotlin/android/text/method/DigitsKeyListener#DigitsKeyListener(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)?`)` <br /> |
+| [DigitsKeyListener](https://developer.android.com/reference/kotlin/android/text/method/DigitsKeyListener#DigitsKeyListener(java.util.Locale,%20kotlin.Boolean,%20kotlin.Boolean))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)?`, `sign:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `decimal:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
+
+| Public methods ||
+|----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [filter](https://developer.android.com/reference/kotlin/android/text/method/DigitsKeyListener#filter(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20android.text.Spanned,%20kotlin.Int,%20kotlin.Int))`(`source:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dest:` ` [Spanned](https://developer.android.com/reference/kotlin/android/text/Spanned.html#)!`, `dstart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dend:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInputType](https://developer.android.com/reference/kotlin/android/text/method/DigitsKeyListener#getInputType())`()` Returns the input type for the listener. |
+| openstatic [DigitsKeyListener](https://developer.android.com/reference/kotlin/android/text/method/DigitsKeyListener#) | [getInstance](https://developer.android.com/reference/kotlin/android/text/method/DigitsKeyListener#getInstance())`()` Returns a DigitsKeyListener that accepts the ASCII digits 0 through 9. |
+| openstatic [DigitsKeyListener](https://developer.android.com/reference/kotlin/android/text/method/DigitsKeyListener#) | [getInstance](https://developer.android.com/reference/kotlin/android/text/method/DigitsKeyListener#getInstance(kotlin.Boolean,%20kotlin.Boolean))`(`sign:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `decimal:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Returns a DigitsKeyListener that accepts the ASCII digits 0 through 9, plus the ASCII plus or minus sign (only at the beginning) and/or the ASCII period ('.') as the decimal point (only one per field) if specified. |
+| openstatic [DigitsKeyListener](https://developer.android.com/reference/kotlin/android/text/method/DigitsKeyListener#) | [getInstance](https://developer.android.com/reference/kotlin/android/text/method/DigitsKeyListener#getInstance(kotlin.String))`(`accepted:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns a DigitsKeyListener that accepts only the characters that appear in the specified String. |
+| openstatic [DigitsKeyListener](https://developer.android.com/reference/kotlin/android/text/method/DigitsKeyListener#) | [getInstance](https://developer.android.com/reference/kotlin/android/text/method/DigitsKeyListener#getInstance(java.util.Locale))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)?`)` Returns a DigitsKeyListener that accepts the locale-appropriate digits. |
+| openstatic [DigitsKeyListener](https://developer.android.com/reference/kotlin/android/text/method/DigitsKeyListener#) | [getInstance](https://developer.android.com/reference/kotlin/android/text/method/DigitsKeyListener#getInstance(java.util.Locale,%20kotlin.Boolean,%20kotlin.Boolean))`(`locale:` ` [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)?`, `sign:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `decimal:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Returns a DigitsKeyListener that accepts the locale-appropriate digits, plus the locale-appropriate plus or minus sign (only at the beginning) and/or the locale-appropriate decimal separator (only one per field) if specified. |
+
+| Protected methods ||
+|---------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| open [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html) | [getAcceptedChars](https://developer.android.com/reference/kotlin/android/text/method/DigitsKeyListener#getAcceptedChars())`()` <br /> |
+
+| Inherited functions ||
+|---|---|
+| From class [MetaKeyKeyListener](https://developer.android.com/reference/kotlin/android/text/method/MetaKeyKeyListener) |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [adjustMetaAfterKeypress](https://developer.android.com/reference/kotlin/android/text/method/MetaKeyKeyListener#adjustMetaAfterKeypress(android.text.Spannable))`(`content:` ` [Spannable](https://developer.android.com/reference/kotlin/android/text/Spannable.html#)!`)` <br /> Call this method after you handle a keypress so that the meta state will be reset to unshifted (if it is not still down) or primed to be reset to unshifted (once it is released). <br /> | | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [adjustMetaAfterKeypress](https://developer.android.com/reference/kotlin/android/text/method/MetaKeyKeyListener#adjustMetaAfterKeypress(kotlin.Long))`(`state:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> Call this method after you handle a keypress so that the meta state will be reset to unshifted (if it is not still down) or primed to be reset to unshifted (once it is released). Takes the current state, returns the new state. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearMetaKeyState](https://developer.android.com/reference/kotlin/android/text/method/MetaKeyKeyListener#clearMetaKeyState(android.view.View,%20android.text.Editable,%20kotlin.Int))`(`view:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!`, `content:` ` [Editable](https://developer.android.com/reference/kotlin/android/text/Editable.html#)!`, `states:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> | | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [clearMetaKeyState](https://developer.android.com/reference/kotlin/android/text/method/MetaKeyKeyListener#clearMetaKeyState(kotlin.Long,%20kotlin.Int))`(`state:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `which:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Clears the state of the specified meta key if it is locked. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearMetaKeyState](https://developer.android.com/reference/kotlin/android/text/method/MetaKeyKeyListener#clearMetaKeyState(android.text.Editable,%20kotlin.Int))`(`content:` ` [Editable](https://developer.android.com/reference/kotlin/android/text/Editable.html#)!`, `states:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMetaState](https://developer.android.com/reference/kotlin/android/text/method/MetaKeyKeyListener#getMetaState(kotlin.CharSequence))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` <br /> Gets the state of the meta keys. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMetaState](https://developer.android.com/reference/kotlin/android/text/method/MetaKeyKeyListener#getMetaState(kotlin.CharSequence,%20android.view.KeyEvent))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `event:` ` [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!`)` <br /> Gets the state of the meta keys for a specific key event. For input devices that use toggled key modifiers, the \`toggled' state is stored into the text buffer. This method retrieves the meta state for this event, accounting for the stored state. If the event has been created by a device that does not support toggled key modifiers, like a virtual device for example, the stored state is ignored. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMetaState](https://developer.android.com/reference/kotlin/android/text/method/MetaKeyKeyListener#getMetaState(kotlin.CharSequence,%20kotlin.Int))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `meta:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Gets the state of a particular meta key. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMetaState](https://developer.android.com/reference/kotlin/android/text/method/MetaKeyKeyListener#getMetaState(kotlin.CharSequence,%20kotlin.Int,%20android.view.KeyEvent))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `meta:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!`)` <br /> Gets the state of a particular meta key to use with a particular key event. If the key event has been created by a device that does not support toggled key modifiers, like a virtual keyboard for example, only the meta state in the key event is considered. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMetaState](https://developer.android.com/reference/kotlin/android/text/method/MetaKeyKeyListener#getMetaState(kotlin.Long))`(`state:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> Gets the state of the meta keys. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMetaState](https://developer.android.com/reference/kotlin/android/text/method/MetaKeyKeyListener#getMetaState(kotlin.Long,%20kotlin.Int))`(`state:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `meta:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Gets the state of a particular meta key. <br /> | | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [handleKeyDown](https://developer.android.com/reference/kotlin/android/text/method/MetaKeyKeyListener#handleKeyDown(kotlin.Long,%20kotlin.Int,%20android.view.KeyEvent))`(`state:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!`)` <br /> Handles presses of the meta keys. <br /> | | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [handleKeyUp](https://developer.android.com/reference/kotlin/android/text/method/MetaKeyKeyListener#handleKeyUp(kotlin.Long,%20kotlin.Int,%20android.view.KeyEvent))`(`state:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!`)` <br /> Handles release of the meta keys. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMetaTracker](https://developer.android.com/reference/kotlin/android/text/method/MetaKeyKeyListener#isMetaTracker(kotlin.CharSequence,%20kotlin.Any))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `what:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> Returns true if this object is one that this class would use to keep track of any meta state in the specified text. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSelectingMetaTracker](https://developer.android.com/reference/kotlin/android/text/method/MetaKeyKeyListener#isSelectingMetaTracker(kotlin.CharSequence,%20kotlin.Any))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `what:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> Returns true if this object is one that this class would use to keep track of the selecting meta state in the specified text. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onKeyUp](https://developer.android.com/reference/kotlin/android/text/method/MetaKeyKeyListener#onKeyUp(android.view.View,%20android.text.Editable,%20kotlin.Int,%20android.view.KeyEvent))`(`view:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!`, `content:` ` [Editable](https://developer.android.com/reference/kotlin/android/text/Editable.html#)!`, `keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!`)` <br /> Handles release of the meta keys. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetLockedMeta](https://developer.android.com/reference/kotlin/android/text/method/MetaKeyKeyListener#resetLockedMeta(android.text.Spannable))`(`content:` ` [Spannable](https://developer.android.com/reference/kotlin/android/text/Spannable.html#)!`)` <br /> Call this if you are a method that ignores the locked meta state (arrow keys, for example) and you handle a key. <br /> | | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [resetLockedMeta](https://developer.android.com/reference/kotlin/android/text/method/MetaKeyKeyListener#resetLockedMeta(kotlin.Long))`(`state:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> Call this if you are a method that ignores the locked meta state (arrow keys, for example) and you handle a key. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetMetaState](https://developer.android.com/reference/kotlin/android/text/method/MetaKeyKeyListener#resetMetaState(android.text.Spannable))`(`text:` ` [Spannable](https://developer.android.com/reference/kotlin/android/text/Spannable.html#)!`)` <br /> Resets all meta state to inactive. <br /> | ||
+| From class [BaseKeyListener](https://developer.android.com/reference/kotlin/android/text/method/BaseKeyListener) |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [backspace](https://developer.android.com/reference/kotlin/android/text/method/BaseKeyListener#backspace(android.view.View,%20android.text.Editable,%20kotlin.Int,%20android.view.KeyEvent))`(`view:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!`, `content:` ` [Editable](https://developer.android.com/reference/kotlin/android/text/Editable.html#)!`, `keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!`)` <br /> Performs the action that happens when you press the [KeyEvent.KEYCODE_DEL](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#KEYCODE_DEL:kotlin.Int) key in a [TextView](https://developer.android.com/reference/kotlin/android/widget/TextView.html#). If there is a selection, deletes the selection; otherwise, deletes the character before the cursor, if any; ALT+DEL deletes everything on the line the cursor is on. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [forwardDelete](https://developer.android.com/reference/kotlin/android/text/method/BaseKeyListener#forwardDelete(android.view.View,%20android.text.Editable,%20kotlin.Int,%20android.view.KeyEvent))`(`view:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!`, `content:` ` [Editable](https://developer.android.com/reference/kotlin/android/text/Editable.html#)!`, `keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!`)` <br /> Performs the action that happens when you press the [KeyEvent.KEYCODE_FORWARD_DEL](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#KEYCODE_FORWARD_DEL:kotlin.Int) key in a [TextView](https://developer.android.com/reference/kotlin/android/widget/TextView.html#). If there is a selection, deletes the selection; otherwise, deletes the character before the cursor, if any; ALT+FORWARD_DEL deletes everything on the line the cursor is on. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onKeyOther](https://developer.android.com/reference/kotlin/android/text/method/BaseKeyListener#onKeyOther(android.view.View,%20android.text.Editable,%20android.view.KeyEvent))`(`view:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!`, `content:` ` [Editable](https://developer.android.com/reference/kotlin/android/text/Editable.html#)!`, `event:` ` [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!`)` <br /> Base implementation handles ACTION_MULTIPLE KEYCODE_UNKNOWN by inserting the event's text into the content. <br /> | ||
+| From class [KeyListener](https://developer.android.com/reference/kotlin/android/text/method/KeyListener) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInputType](https://developer.android.com/reference/kotlin/android/text/method/KeyListener#getInputType())`()` <br /> Return the type of text that this key listener is manipulating, as per [android.text.InputType](https://developer.android.com/reference/kotlin/android/text/InputType.html#). This is used to determine the mode of the soft keyboard that is shown for the editor. If you return [android.text.InputType#TYPE_NULL](https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_NULL:kotlin.Int) then*no*soft keyboard will provided. In other words, you must be providing your own key pad for on-screen input and the key listener will be used to handle input from a hard keyboard. If you return any other value, a soft input method will be created when the user puts focus in the editor, which will provide a keypad and also consume hard key events. This means that the key listener will generally not be used, instead the soft input method will take care of managing key input as per the content type returned here. <br /> | ||
+| From class [NumberKeyListener](https://developer.android.com/reference/kotlin/android/text/method/NumberKeyListener) |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [lookup](https://developer.android.com/reference/kotlin/android/text/method/NumberKeyListener#lookup(android.view.KeyEvent,%20android.text.Spannable))`(`event:` ` [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!`, `content:` ` [Spannable](https://developer.android.com/reference/kotlin/android/text/Spannable.html#)!`)` <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [ok](https://developer.android.com/reference/kotlin/android/text/method/NumberKeyListener#ok(kotlin.CharArray,%20kotlin.Char))`(`accept:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onKeyDown](https://developer.android.com/reference/kotlin/android/text/method/NumberKeyListener#onKeyDown(android.view.View,%20android.text.Editable,%20kotlin.Int,%20android.view.KeyEvent))`(`view:` ` [View](https://developer.android.com/reference/kotlin/android/view/View.html#)!`, `content:` ` [Editable](https://developer.android.com/reference/kotlin/android/text/Editable.html#)!`, `keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)!`)` <br /> | ||
+
+## Public constructors
+
+### DigitsKeyListener
+
+Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+DigitsKeyListener()
+```
+
+**Deprecated:** *Use [DigitsKeyListener(java.util.Locale)](https://developer.android.com/reference/kotlin/android/text/method/DigitsKeyListener#DigitsKeyListener(java.util.Locale))instead.*
+
+Allocates a DigitsKeyListener that accepts the ASCII digits 0 through 9. 
+
+### DigitsKeyListener
+
+Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+DigitsKeyListener(
+    sign: Boolean, 
+    decimal: Boolean)
+```
+
+**Deprecated:** *Use [DigitsKeyListener(java.util.Locale,boolean,boolean)](https://developer.android.com/reference/kotlin/android/text/method/DigitsKeyListener#DigitsKeyListener(java.util.Locale,%20kotlin.Boolean,%20kotlin.Boolean))instead.*
+
+Allocates a DigitsKeyListener that accepts the ASCII digits 0 through 9, plus the ASCII plus or minus sign (only at the beginning) and/or the ASCII period ('.') as the decimal point (only one per field) if specified. 
+
+### DigitsKeyListener
+
+Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+DigitsKeyListener(locale: Locale?)
+```
+
+| Parameters ||
+|----------|-----------------------------------------------------------------------------------------------------------|
+| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)?:This value may be`null`. |
+
+### DigitsKeyListener
+
+Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+DigitsKeyListener(
+    locale: Locale?, 
+    sign: Boolean, 
+    decimal: Boolean)
+```
+
+| Parameters ||
+|----------|-----------------------------------------------------------------------------------------------------------|
+| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)?:This value may be`null`. |
+
+## Public methods
+
+### filter
+
+Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open fun filter(
+    source: CharSequence!, 
+    start: Int, 
+    end: Int, 
+    dest: Spanned!, 
+    dstart: Int, 
+    dend: Int
+): CharSequence!
+```  
+
+### getInputType
+
+Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open fun getInputType(): Int
+```
+
+Returns the input type for the listener. 
+
+### getInstance
+
+Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open static fun getInstance(): DigitsKeyListener
+```
+
+**Deprecated:** *Use [getInstance(java.util.Locale)](https://developer.android.com/reference/kotlin/android/text/method/DigitsKeyListener#getInstance(java.util.Locale))instead.*
+
+Returns a DigitsKeyListener that accepts the ASCII digits 0 through 9.
+
+| Return ||
+|------------------------------------------------------------------------------------------------------------|-----------------------------|
+| [DigitsKeyListener](https://developer.android.com/reference/kotlin/android/text/method/DigitsKeyListener#) | This value cannot be`null`. |
+
+### getInstance
+
+Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open static fun getInstance(
+    sign: Boolean, 
+    decimal: Boolean
+): DigitsKeyListener
+```
+
+**Deprecated:** *Use [getInstance(java.util.Locale,boolean,boolean)](https://developer.android.com/reference/kotlin/android/text/method/DigitsKeyListener#getInstance(java.util.Locale,%20kotlin.Boolean,%20kotlin.Boolean))instead.*
+
+Returns a DigitsKeyListener that accepts the ASCII digits 0 through 9, plus the ASCII plus or minus sign (only at the beginning) and/or the ASCII period ('.') as the decimal point (only one per field) if specified.
+
+| Return ||
+|------------------------------------------------------------------------------------------------------------|-----------------------------|
+| [DigitsKeyListener](https://developer.android.com/reference/kotlin/android/text/method/DigitsKeyListener#) | This value cannot be`null`. |
+
+### getInstance
+
+Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open static fun getInstance(accepted: String): DigitsKeyListener
+```
+
+Returns a DigitsKeyListener that accepts only the characters that appear in the specified String. Note that not all characters may be available on every keyboard.
+
+| Parameters ||
+|------------|--------------------------------------------------------------------------------------------------------------|
+| `accepted` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
+
+| Return ||
+|------------------------------------------------------------------------------------------------------------|-----------------------------|
+| [DigitsKeyListener](https://developer.android.com/reference/kotlin/android/text/method/DigitsKeyListener#) | This value cannot be`null`. |
+
+### getInstance
+
+Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open static fun getInstance(locale: Locale?): DigitsKeyListener
+```
+
+Returns a DigitsKeyListener that accepts the locale-appropriate digits.
+
+| Parameters ||
+|----------|-----------------------------------------------------------------------------------------------------------|
+| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)?:This value may be`null`. |
+
+| Return ||
+|------------------------------------------------------------------------------------------------------------|-----------------------------|
+| [DigitsKeyListener](https://developer.android.com/reference/kotlin/android/text/method/DigitsKeyListener#) | This value cannot be`null`. |
+
+### getInstance
+
+Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open static fun getInstance(
+    locale: Locale?, 
+    sign: Boolean, 
+    decimal: Boolean
+): DigitsKeyListener
+```
+
+Returns a DigitsKeyListener that accepts the locale-appropriate digits, plus the locale-appropriate plus or minus sign (only at the beginning) and/or the locale-appropriate decimal separator (only one per field) if specified.
+
+| Parameters ||
+|----------|-----------------------------------------------------------------------------------------------------------|
+| `locale` | [Locale](https://developer.android.com/reference/kotlin/java/util/Locale.html#)?:This value may be`null`. |
+
+| Return ||
+|------------------------------------------------------------------------------------------------------------|-----------------------------|
+| [DigitsKeyListener](https://developer.android.com/reference/kotlin/android/text/method/DigitsKeyListener#) | This value cannot be`null`. |
+
+## Protected methods
+
+### getAcceptedChars
+
+Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+protected open fun getAcceptedChars(): CharArray
+```
+
+| Return ||
+|-----------------------------------------------------------------------------------------|-----------------------------|
+| [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html) | This value cannot be`null`. |

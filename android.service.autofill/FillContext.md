@@ -1,0 +1,127 @@
+# FillContext
+
+Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels)
+
+# FillContext
+
+Kotlin| [Java](https://developer.android.com/reference/android/service/autofill/FillContext "View this page in Java") 
+
+```
+class FillContext : Parcelable
+```
+
+| [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| ↳ | [android.service.autofill.FillContext](https://developer.android.com/reference/kotlin/android/service/autofill/FillContext#) |
+
+This class represents a context for each fill request made via [android.service.autofill.AutofillService#onFillRequest(android.service.autofill.FillRequest,android.os.CancellationSignal,android.service.autofill.FillCallback)](https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onFillRequest(android.service.autofill.FillRequest,%20android.os.CancellationSignal,%20android.service.autofill.FillCallback)). It contains a snapshot of the UI state, the view ids that were returned by the [autofill service](https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService) as both required to trigger a save and optional that can be saved, and the id of the corresponding [FillRequest](https://developer.android.com/reference/kotlin/android/service/autofill/FillRequest).
+
+This context allows you to inspect the values for the interesting views in the context they appeared. Also a reference to the corresponding fill request is useful to store meta-data in the client state bundle passed to [FillResponse.Builder.setClientState(Bundle)](https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse.Builder#setClientState(android.os.Bundle))to avoid interpreting the UI state again while saving.
+
+## Summary
+
+| Inherited constants ||
+|---|---|
+| From class [Parcelable](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) <br /> Descriptor bit used with [describeContents()](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int) <br /> Flag for use with [writeToParcel](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+
+| Public methods ||
+|------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](https://developer.android.com/reference/kotlin/android/service/autofill/FillContext#describeContents())`()` <br /> |
+| [AutofillId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#) | [getFocusedId](https://developer.android.com/reference/kotlin/android/service/autofill/FillContext#getFocusedId())`()` The AutofillId of the view that triggered autofill. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRequestId](https://developer.android.com/reference/kotlin/android/service/autofill/FillContext#getRequestId())`()` The id of the [fill request](https://developer.android.com/reference/kotlin/android/service/autofill/FillRequest) this context corresponds to. |
+| [AssistStructure](https://developer.android.com/reference/kotlin/android/app/assist/AssistStructure.html#) | [getStructure](https://developer.android.com/reference/kotlin/android/service/autofill/FillContext#getStructure())`()` The screen content. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/android/service/autofill/FillContext#toString())`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](https://developer.android.com/reference/kotlin/android/service/autofill/FillContext#writeToParcel(android.os.Parcel,%20kotlin.Int))`(`dest:` ` [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+
+| Properties ||
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| static [Parcelable.Creator](https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator.html#)\< [FillContext](https://developer.android.com/reference/kotlin/android/service/autofill/FillContext#)!\> | [CREATOR](https://developer.android.com/reference/kotlin/android/service/autofill/FillContext#CREATOR:android.os.Parcelable.Creator) <br /> |
+
+## Public methods
+
+### describeContents
+
+Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+fun describeContents(): Int
+```
+
+| Return ||
+|----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int) |
+
+### getFocusedId
+
+Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+fun getFocusedId(): AutofillId
+```
+
+The AutofillId of the view that triggered autofill.
+
+| Return ||
+|-----------------------------------------------------------------------------------------------------|-----------------------------|
+| [AutofillId](https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#) | This value cannot be`null`. |
+
+### getRequestId
+
+Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+fun getRequestId(): Int
+```
+
+The id of the [fill request](https://developer.android.com/reference/kotlin/android/service/autofill/FillRequest) this context corresponds to. This is useful to associate your custom client state with every request to avoid reinterpreting the UI when saving user data. 
+
+### getStructure
+
+Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+fun getStructure(): AssistStructure
+```
+
+The screen content.
+
+| Return ||
+|------------------------------------------------------------------------------------------------------------|-----------------------------|
+| [AssistStructure](https://developer.android.com/reference/kotlin/android/app/assist/AssistStructure.html#) | This value cannot be`null`. |
+
+### toString
+
+Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+fun toString(): String
+```
+
+| Return ||
+|----------------------------------------------------------------------------------|----------------------------------------|
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | a string representation of the object. |
+
+### writeToParcel
+
+Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+fun writeToParcel(
+    dest: Parcel, 
+    flags: Int
+): Unit
+```
+
+| Parameters ||
+|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `dest` | [Parcel](https://developer.android.com/reference/kotlin/android/os/Parcel.html#):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+
+## Properties
+
+### CREATOR
+
+Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+static val CREATOR: Parcelable.Creator<FillContext!>
+```

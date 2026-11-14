@@ -1,0 +1,39 @@
+# ExpandableListView.OnGroupCollapseListener
+
+Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels)
+
+# OnGroupCollapseListener
+
+Kotlin| [Java](https://developer.android.com/reference/android/widget/ExpandableListView.OnGroupCollapseListener "View this page in Java") 
+
+```
+interface OnGroupCollapseListener
+```
+
+| [android.widget.ExpandableListView.OnGroupCollapseListener](https://developer.android.com/reference/kotlin/android/widget/ExpandableListView.OnGroupCollapseListener#) |
+
+| Known Direct Subclasses [ExpandableListActivity](https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity.html#) |-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ExpandableListActivity](https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity.html#) | An activity that displays an expandable list of items by binding to a data source implementing the ExpandableListAdapter, and exposes event handlers when the user selects an item. | |
+
+Used for being notified when a group is collapsed
+
+## Summary
+
+| Public methods ||
+|--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onGroupCollapse](https://developer.android.com/reference/kotlin/android/widget/ExpandableListView.OnGroupCollapseListener#onGroupCollapse(kotlin.Int))`(`groupPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback method to be invoked when a group in this expandable list has been collapsed. |
+
+## Public methods
+
+### onGroupCollapse
+
+Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+abstract fun onGroupCollapse(groupPosition: Int): Unit
+```
+
+Callback method to be invoked when a group in this expandable list has been collapsed.
+
+| Parameters ||
+|-----------------|------------------------------------------------------------------------------------------------------------------|
+| `groupPosition` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The group position that was collapsed |

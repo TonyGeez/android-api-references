@@ -1,0 +1,57 @@
+# ObjectMethods
+
+Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels)
+
+# ObjectMethods
+
+```
+open class ObjectMethods
+```
+
+| [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| ↳ | [java.lang.runtime.ObjectMethods](https://developer.android.com/reference/kotlin/java/lang/runtime/ObjectMethods#) |
+
+Bootstrap methods for state-driven implementations of core methods, including [Object.equals(Object)](https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)), [Object.hashCode()](https://developer.android.com/reference/kotlin/java/lang/Object.html#hashCode()), and [Object.toString()](https://developer.android.com/reference/kotlin/java/lang/Object.html#toString()). These methods may be used, for example, by Java compiler implementations to implement the bodies of [Object](https://developer.android.com/reference/kotlin/java/lang/Object.html#) methods for record classes.
+
+## Summary
+
+| Public methods ||
+|--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| openstatic [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [bootstrap](https://developer.android.com/reference/kotlin/java/lang/runtime/ObjectMethods#bootstrap(java.lang.invoke.MethodHandles.Lookup,%20kotlin.String,%20java.lang.invoke.TypeDescriptor,%20java.lang.Class,%20kotlin.String,%20java.lang.invoke.MethodHandle))`(`lookup:` ` [MethodHandles.Lookup](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles.Lookup.html#)`, `methodName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `type:` ` [TypeDescriptor](https://developer.android.com/reference/kotlin/java/lang/invoke/TypeDescriptor.html#)`, `recordClass:` ` [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)<*>`, `names:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `vararg` `getters:` ` [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle.html#)!`)` Bootstrap method to generate the [Object.equals(Object)](https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)), [Object.hashCode()](https://developer.android.com/reference/kotlin/java/lang/Object.html#hashCode()), and [Object.toString()](https://developer.android.com/reference/kotlin/java/lang/Object.html#toString())methods, based on a description of the component names and accessor methods, for either`invokedynamic`call sites or dynamic constant pool entries. |
+
+## Public methods
+
+### bootstrap
+
+Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open static fun bootstrap(
+    lookup: MethodHandles.Lookup, 
+    methodName: String, 
+    type: TypeDescriptor, 
+    recordClass: Class<*>, 
+    names: String?, 
+    vararg getters: MethodHandle!
+): Any
+```
+
+Bootstrap method to generate the [Object.equals(Object)](https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)), [Object.hashCode()](https://developer.android.com/reference/kotlin/java/lang/Object.html#hashCode()), and [Object.toString()](https://developer.android.com/reference/kotlin/java/lang/Object.html#toString())methods, based on a description of the component names and accessor methods, for either`invokedynamic`call sites or dynamic constant pool entries. For more detail on the semantics of the generated methods see the specification of [java.lang.Record#equals(Object)](https://developer.android.com/reference/kotlin/java/lang/Record.html#equals(kotlin.Any)), [java.lang.Record#hashCode()](https://developer.android.com/reference/kotlin/java/lang/Record.html#hashCode())and [java.lang.Record#toString()](https://developer.android.com/reference/kotlin/java/lang/Record.html#toString()).
+
+| Parameters ||
+|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `lookup` | [MethodHandles.Lookup](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandles.Lookup.html#):Every bootstrap method is expected to have a`lookup`which usually represents a lookup context with the accessibility privileges of the caller. This is because`invokedynamic`call sites always provide a`lookup`to the corresponding bootstrap method, but this method just ignores the`lookup`parameter |
+| `methodName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the name of the method to generate, which must be one of`"equals"`,`"hashCode"`, or`"toString"` |
+| `type` | [TypeDescriptor](https://developer.android.com/reference/kotlin/java/lang/invoke/TypeDescriptor.html#):a [MethodType](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType.html#) corresponding the descriptor type for the method, which must correspond to the descriptor for the corresponding [Object](https://developer.android.com/reference/kotlin/java/lang/Object.html#) method, if linking an`invokedynamic`call site, or the constant`MethodHandle.class`, if linking a dynamic constant |
+| `recordClass` | [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html#)\<\*\>:the record class hosting the record components |
+| `names` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:the list of component names, joined into a string separated by ";", or the empty string if there are no components. Maybe be null, if the`methodName`is`"equals"`or`"hashCode"`. |
+| `getters` | [MethodHandle](https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle.html#)!:method handles for the accessor methods for the components |
+
+| Return ||
+|----------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | a call site if invoked by indy, or a method handle if invoked by a condy |
+
+| Exceptions ||
+|--------------------------------------|----------------------------------------------------------|
+| `java.lang.IllegalArgumentException` | if the bootstrap arguments are invalid or inconsistent |
+| `java.lang.Throwable` | if any exception is thrown during call site construction |

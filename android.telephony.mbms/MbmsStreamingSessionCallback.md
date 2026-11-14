@@ -1,0 +1,78 @@
+Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels)
+
+# MbmsStreamingSessionCallback
+
+Kotlin | [Java](https://developer.android.com/reference/android/telephony/mbms/MbmsStreamingSessionCallback "View this page in Java")
+
+```
+open class MbmsStreamingSessionCallback
+```
+
+| [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| ↳ | [android.telephony.mbms.MbmsStreamingSessionCallback](https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsStreamingSessionCallback#) |
+
+A callback class that is used to receive information from the middleware on MBMS streaming services. An instance of this object should be passed into `https://developer.android.com/reference/kotlin/android/telephony/MbmsStreamingSession.html#create(android.content.Context,%20java.util.concurrent.Executor,%20kotlin.Int,%20android.telephony.mbms.MbmsStreamingSessionCallback)`.
+
+## Summary
+
+| Public constructors ||
+|---|---|
+| `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsStreamingSessionCallback#MbmsStreamingSessionCallback()()` <br /> |
+
+| Public methods ||
+|---|---|
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsStreamingSessionCallback#onError(kotlin.Int,%20kotlin.String)(errorCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Called by the middleware when it has detected an error condition. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsStreamingSessionCallback#onMiddlewareReady()()` Called to indicate that the middleware has been initialized and is ready. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsStreamingSessionCallback#onStreamingServicesUpdated(kotlin.collections.MutableList)(services: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingServiceInfo!>!)` Called to indicate published Streaming Services have changed. |
+
+## Public constructors
+
+### MbmsStreamingSessionCallback
+
+```
+MbmsStreamingSessionCallback()
+```
+
+## Public methods
+
+### onError
+
+Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels)
+
+```
+open fun onError(
+    errorCode: Int, 
+    message: String?
+): Unit
+```
+
+Called by the middleware when it has detected an error condition. The possible error codes are listed in `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors`.
+
+| Parameters ||
+|---|---|
+| `errorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The error code. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors#ERROR_NO_UNIQUE_MIDDLEWARE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors#ERROR_MIDDLEWARE_LOST:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors#ERROR_MIDDLEWARE_NOT_BOUND:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors.InitializationErrors#ERROR_APP_PERMISSIONS_NOT_GRANTED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors.InitializationErrors#ERROR_DUPLICATE_INITIALIZE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors.InitializationErrors#ERROR_UNABLE_TO_INITIALIZE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors.GeneralErrors#ERROR_MIDDLEWARE_NOT_YET_READY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors.GeneralErrors#ERROR_OUT_OF_MEMORY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors.GeneralErrors#ERROR_MIDDLEWARE_TEMPORARILY_UNAVAILABLE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors.GeneralErrors#ERROR_IN_E911:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors.GeneralErrors#ERROR_NOT_CONNECTED_TO_HOME_CARRIER_LTE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors.GeneralErrors#ERROR_UNABLE_TO_READ_SIM:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors.GeneralErrors#ERROR_CARRIER_CHANGE_NOT_ALLOWED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors.StreamingErrors#ERROR_CONCURRENT_SERVICE_LIMIT_REACHED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors.StreamingErrors#ERROR_UNABLE_TO_START_SERVICE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors.StreamingErrors#ERROR_DUPLICATE_START_STREAM:kotlin.Int` |
+| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: A human-readable message generated by the middleware for debugging purposes. This value may be `null`. |
+
+### onMiddlewareReady
+
+Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels)
+
+```
+open fun onMiddlewareReady(): Unit
+```
+
+Called to indicate that the middleware has been initialized and is ready. Before this method is called, calling any method on an instance of `https://developer.android.com/reference/kotlin/android/telephony/MbmsStreamingSession.html#` will result in an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#` or an error delivered via `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsStreamingSessionCallback#onError(kotlin.Int,%20kotlin.String)` with error code `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors.GeneralErrors#ERROR_MIDDLEWARE_NOT_YET_READY:kotlin.Int`.
+
+### onStreamingServicesUpdated
+
+Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels)
+
+```
+open fun onStreamingServicesUpdated(services: MutableList<StreamingServiceInfo!>!): Unit
+```
+
+Called to indicate published Streaming Services have changed. This will only be called after the application has requested a list of streaming services and specified a service class list of interest AND the results of a subsequent getStreamServices call with the same service class list would return different results.
+
+| Parameters ||
+|---|---|
+| `services` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [StreamingServiceInfo](https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingServiceInfo)!\>!: The list of available services. |

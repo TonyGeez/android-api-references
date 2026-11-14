@@ -1,0 +1,90 @@
+# ActionBar.TabListener
+
+Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels)
+
+# TabListener
+
+Kotlin| [Java](https://developer.android.com/reference/android/app/ActionBar.TabListener "View this page in Java") 
+
+```
+interface TabListener
+```
+
+| [android.app.ActionBar.TabListener](https://developer.android.com/reference/kotlin/android/app/ActionBar.TabListener#) |
+
+| **This interface was deprecated in API level 21.**
+|
+| Action bar navigation modes are deprecated and not supported by inline toolbar action bars. Consider using other [common navigation patterns](http://developer.android.com/design/patterns/navigation.html) instead.
+
+Callback interface invoked when a tab is focused, unfocused, added, or removed.
+
+## Summary
+
+| Public methods ||
+|--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTabReselected](https://developer.android.com/reference/kotlin/android/app/ActionBar.TabListener#onTabReselected(android.app.ActionBar.Tab,%20android.app.FragmentTransaction))`(`tab:` ` [ActionBar.Tab](https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab)!`, `ft:` ` [FragmentTransaction](https://developer.android.com/reference/kotlin/android/app/FragmentTransaction)!`)` Called when a tab that is already selected is chosen again by the user. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTabSelected](https://developer.android.com/reference/kotlin/android/app/ActionBar.TabListener#onTabSelected(android.app.ActionBar.Tab,%20android.app.FragmentTransaction))`(`tab:` ` [ActionBar.Tab](https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab)!`, `ft:` ` [FragmentTransaction](https://developer.android.com/reference/kotlin/android/app/FragmentTransaction)!`)` Called when a tab enters the selected state. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTabUnselected](https://developer.android.com/reference/kotlin/android/app/ActionBar.TabListener#onTabUnselected(android.app.ActionBar.Tab,%20android.app.FragmentTransaction))`(`tab:` ` [ActionBar.Tab](https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab)!`, `ft:` ` [FragmentTransaction](https://developer.android.com/reference/kotlin/android/app/FragmentTransaction)!`)` Called when a tab exits the selected state. |
+
+## Public methods
+
+### onTabReselected
+
+Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+abstract fun onTabReselected(
+    tab: ActionBar.Tab!, 
+    ft: FragmentTransaction!
+): Unit
+```
+
+**Deprecated:** *Deprecated in Java.*
+
+Called when a tab that is already selected is chosen again by the user. Some applications may use this action to return to the top level of a category.
+
+| Parameters ||
+|-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `tab` | [ActionBar.Tab](https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab)!:The tab that was reselected. |
+| `ft` | [FragmentTransaction](https://developer.android.com/reference/kotlin/android/app/FragmentTransaction)!:A [FragmentTransaction](https://developer.android.com/reference/kotlin/android/app/FragmentTransaction) for queuing fragment operations to execute once this method returns. This FragmentTransaction does not support being added to the back stack. |
+
+### onTabSelected
+
+Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+abstract fun onTabSelected(
+    tab: ActionBar.Tab!, 
+    ft: FragmentTransaction!
+): Unit
+```
+
+**Deprecated:** *Deprecated in Java.*
+
+Called when a tab enters the selected state.
+
+| Parameters ||
+|-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `tab` | [ActionBar.Tab](https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab)!:The tab that was selected |
+| `ft` | [FragmentTransaction](https://developer.android.com/reference/kotlin/android/app/FragmentTransaction)!:A [FragmentTransaction](https://developer.android.com/reference/kotlin/android/app/FragmentTransaction) for queuing fragment operations to execute during a tab switch. The previous tab's unselect and this tab's select will be executed in a single transaction. This FragmentTransaction does not support being added to the back stack. |
+
+### onTabUnselected
+
+Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+abstract fun onTabUnselected(
+    tab: ActionBar.Tab!, 
+    ft: FragmentTransaction!
+): Unit
+```
+
+**Deprecated:** *Deprecated in Java.*
+
+Called when a tab exits the selected state.
+
+| Parameters ||
+|-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `tab` | [ActionBar.Tab](https://developer.android.com/reference/kotlin/android/app/ActionBar.Tab)!:The tab that was unselected |
+| `ft` | [FragmentTransaction](https://developer.android.com/reference/kotlin/android/app/FragmentTransaction)!:A [FragmentTransaction](https://developer.android.com/reference/kotlin/android/app/FragmentTransaction) for queuing fragment operations to execute during a tab switch. This tab's unselect and the newly selected tab's select will be executed in a single transaction. This FragmentTransaction does not support being added to the back stack. |

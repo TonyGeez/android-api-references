@@ -1,0 +1,112 @@
+# SimpleFormatter
+
+Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels)
+
+# SimpleFormatter
+
+```
+open class SimpleFormatter : Formatter
+```
+
+| [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
+| ↳ | [java.util.logging.Formatter](https://developer.android.com/reference/kotlin/java/util/logging/Formatter) ||
+| | ↳ | [java.util.logging.SimpleFormatter](https://developer.android.com/reference/kotlin/java/util/logging/SimpleFormatter#) |
+
+Print a brief summary of the`LogRecord`in a human readable format. The summary will typically be 1 or 2 lines.
+
+**Configuration:**The`SimpleFormatter`is initialized with the [format string](https://developer.android.com/reference/kotlin/java/util/Formatter.html#syntax) specified in the`java.util.logging.SimpleFormatter.format`property to [format](https://developer.android.com/reference/kotlin/java/util/logging/SimpleFormatter#format(java.util.logging.LogRecord))the log messages. This property can be defined in the [logging properties](https://developer.android.com/reference/kotlin/java/util/logging/LogManager#getProperty(kotlin.String))configuration file or as a system property. If this property is set in both the logging properties and system properties, the format string specified in the system property will be used. If this property is not defined or the given format string is [illegal](https://developer.android.com/reference/kotlin/java/util/IllegalFormatException.html#), the default format is implementation-specific.
+
+## Summary
+
+| Public constructors ||
+|----------------------------------------------------------------------------------------------------------------------------------|---|
+| [SimpleFormatter](https://developer.android.com/reference/kotlin/java/util/logging/SimpleFormatter#SimpleFormatter())`()` <br /> |
+
+| Public methods ||
+|---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](https://developer.android.com/reference/kotlin/java/util/logging/SimpleFormatter#format(java.util.logging.LogRecord))`(`record:` ` [LogRecord](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord)!`)` Format the given LogRecord. |
+
+| Inherited functions ||
+|---|---|
+| From class [Formatter](https://developer.android.com/reference/kotlin/java/util/logging/Formatter) |-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatMessage](https://developer.android.com/reference/kotlin/java/util/logging/Formatter#formatMessage(java.util.logging.LogRecord))`(`record:` ` [LogRecord](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord)!`)` <br /> Localize and format the message string from a log record. This method is provided as a convenience for Formatter subclasses to use when they are performing formatting. The message string is first localized to a format string using the record's ResourceBundle. (If there is no ResourceBundle, or if the message key is not found, then the key is used as the format string.) The format String uses java.text style formatting. - If there are no parameters, no formatter is used. - Otherwise, if the string contains "{0" then java.text.MessageFormat is used to format the string. - Otherwise no formatting is performed. <br /> <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHead](https://developer.android.com/reference/kotlin/java/util/logging/Formatter#getHead(java.util.logging.Handler))`(`h:` ` [Handler](https://developer.android.com/reference/kotlin/java/util/logging/Handler)!`)` <br /> Return the header string for a set of formatted records. This base class returns an empty string, but this may be overridden by subclasses. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTail](https://developer.android.com/reference/kotlin/java/util/logging/Formatter#getTail(java.util.logging.Handler))`(`h:` ` [Handler](https://developer.android.com/reference/kotlin/java/util/logging/Handler)!`)` <br /> Return the tail string for a set of formatted records. This base class returns an empty string, but this may be overridden by subclasses. <br /> | ||
+
+## Public constructors
+
+### SimpleFormatter
+
+Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+SimpleFormatter()
+```
+
+## Public methods
+
+### format
+
+Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open fun format(record: LogRecord!): String!
+```
+
+Format the given LogRecord.
+
+The formatting can be customized by specifying the [format string](https://developer.android.com/reference/kotlin/java/util/Formatter.html#syntax) in the [`java.util.logging.SimpleFormatter.format`](https://developer.android.com/reference/kotlin/java/util/logging/SimpleFormatter#formatting) property. The given`LogRecord`will be formatted as if by calling: 
+
+```kotlin
+java.lang.String#format(format, date, source, logger, level, message, thrown);
+  
+```
+where the arguments are: 
+
+1. `format`- the [java.util.Formatter](https://developer.android.com/reference/kotlin/java/util/Formatter.html#) format string specified in the`java.util.logging.SimpleFormatter.format`property or the default format.
+2. `date`- a [Date](https://developer.android.com/reference/kotlin/java/util/Date.html#) object representing [event time](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord#getMillis())of the log record.
+3. `source`- a string representing the caller, if available; otherwise, the logger's name.
+4. `logger`- the logger's name.
+5. `level`- the [log level](https://developer.android.com/reference/kotlin/java/util/logging/Level#getLocalizedName()).
+6. `message`- the formatted log message returned from the [Formatter.formatMessage(LogRecord)](https://developer.android.com/reference/kotlin/java/util/logging/Formatter#formatMessage(java.util.logging.LogRecord))method. It uses [java.text](https://developer.android.com/reference/kotlin/java/text/MessageFormat.html#) formatting and does not use the`java.util.Formatter format`argument.
+7. `thrown`- a string representing the [throwable](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord#getThrown())associated with the log record and its backtrace beginning with a newline character, if any; otherwise, an empty string.
+
+Some example formats: 
+
+- `java.util.logging.SimpleFormatter.format="%4$s: %5$s [%1$tc]%n"`
+
+ This prints 1 line with the log level (`4$`), the log message (`5$`) and the timestamp (`1$`) in a square bracket. 
+
+  ```kotlin
+  WARNING: warning message [Tue Mar 22 13:11:31 PDT 2011]
+        
+  ```
+- `java.util.logging.SimpleFormatter.format="%1$tc %2$s%n%4$s: %5$s%6$s%n"`
+
+ This prints 2 lines where the first line includes the timestamp (`1$`) and the source (`2$`); the second line includes the log level (`4$`) and the log message (`5$`) followed with the throwable and its backtrace (`6$`), if any: 
+
+  ```kotlin
+  Tue Mar 22 13:11:31 PDT 2011 MyClass fatal
+        SEVERE: several message with an exception
+        java.lang.IllegalArgumentException: invalid argument
+                at MyClass.mash(MyClass.java:9)
+                at MyClass.crunch(MyClass.java:6)
+                at MyClass.main(MyClass.java:3)
+        
+  ```
+- `java.util.logging.SimpleFormatter.format="%1$tb %1$td, %1$tY %1$tl:%1$tM:%1$tS %1$Tp %2$s%n%4$s: %5$s%n"`
+
+ This prints 2 lines similar to the example above with a different date/time formatting and does not print the throwable and its backtrace: 
+
+  ```kotlin
+  Mar 22, 2011 1:11:31 PM MyClass fatal
+        SEVERE: several message with an exception
+        
+  ```
+
+This method can also be overridden in a subclass. It is recommended to use the [Formatter.formatMessage](https://developer.android.com/reference/kotlin/java/util/logging/Formatter#formatMessage(java.util.logging.LogRecord))convenience method to localize and format the message field.
+
+| Parameters ||
+|----------|--------------------------------------------------------------------------------------------------------------------------|
+| `record` | [LogRecord](https://developer.android.com/reference/kotlin/java/util/logging/LogRecord)!:the log record to be formatted. |
+
+| Return ||
+|-----------------------------------------------------------------------------------|------------------------|
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | a formatted log record |

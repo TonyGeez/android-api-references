@@ -1,0 +1,701 @@
+# StampedLock
+
+Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels)
+
+# StampedLock
+
+```
+open class StampedLock : Serializable
+```
+
+| [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
+| ↳ | [java.util.concurrent.locks.StampedLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#) |
+
+A capability-based lock with three modes for controlling read/write access. The state of a StampedLock consists of a version and mode. Lock acquisition methods return a stamp that represents and controls access with respect to a lock state; "try" versions of these methods may instead return the special value zero to represent failure to acquire access. Lock release and conversion methods require stamps as arguments, and fail if they do not match the state of the lock. The three modes are:
+
+- **Writing.** Method [writeLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#writeLock())possibly blocks waiting for exclusive access, returning a stamp that can be used in method [unlockWrite](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#unlockWrite(kotlin.Long))to release the lock. Untimed and timed versions of`tryWriteLock`are also provided. When the lock is held in write mode, no read locks may be obtained, and all optimistic read validations will fail.
+- **Reading.** Method [readLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#readLock())possibly blocks waiting for non-exclusive access, returning a stamp that can be used in method [unlockRead](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#unlockRead(kotlin.Long))to release the lock. Untimed and timed versions of`tryReadLock`are also provided.
+- **Optimistic Reading.** Method [tryOptimisticRead](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#tryOptimisticRead())returns a non-zero stamp only if the lock is not currently held in write mode. Method [validate](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#validate(kotlin.Long))returns true if the lock has not been acquired in write mode since obtaining a given stamp, in which case all actions prior to the most recent write lock release happen-before actions following the call to`tryOptimisticRead`. This mode can be thought of as an extremely weak version of a read-lock, that can be broken by a writer at any time. The use of optimistic read mode for short read-only code segments often reduces contention and improves throughput. However, its use is inherently fragile. Optimistic read sections should only read fields and hold them in local variables for later use after validation. Fields read while in optimistic read mode may be wildly inconsistent, so usage applies only when you are familiar enough with data representations to check consistency and/or repeatedly invoke method`validate()`. For example, such steps are typically required when first reading an object or array reference, and then accessing one of its fields, elements or methods.
+
+<br />
+
+This class also supports methods that conditionally provide conversions across the three modes. For example, method [tryConvertToWriteLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#tryConvertToWriteLock(kotlin.Long))attempts to "upgrade" a mode, returning a valid write stamp if (1) already in writing mode (2) in reading mode and there are no other readers or (3) in optimistic read mode and the lock is available. The forms of these methods are designed to help reduce some of the code bloat that otherwise occurs in retry-based designs.
+
+StampedLocks are designed for use as internal utilities in the development of thread-safe components. Their use relies on knowledge of the internal properties of the data, objects, and methods they are protecting. They are not reentrant, so locked bodies should not call other unknown methods that may try to re-acquire locks (although you may pass a stamp to other methods that can use or convert it). The use of read lock modes relies on the associated code sections being side-effect-free. Unvalidated optimistic read sections cannot call methods that are not known to tolerate potential inconsistencies. Stamps use finite representations, and are not cryptographically secure (i.e., a valid stamp may be guessable). Stamp values may recycle after (no sooner than) one year of continuous operation. A stamp held without use or validation for longer than this period may fail to validate correctly. StampedLocks are serializable, but always deserialize into initial unlocked state, so they are not useful for remote locking.
+
+Like [Semaphore](https://developer.android.com/reference/kotlin/java/util/concurrent/Semaphore.html#), but unlike most [Lock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock) implementations, StampedLocks have no notion of ownership. Locks acquired in one thread can be released or converted in another.
+
+The scheduling policy of StampedLock does not consistently prefer readers over writers or vice versa. All "try" methods are best-effort and do not necessarily conform to any scheduling or fairness policy. A zero return from any "try" method for acquiring or converting locks does not carry any information about the state of the lock; a subsequent invocation may succeed.
+
+Because it supports coordinated usage across multiple lock modes, this class does not directly implement the [Lock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock) or [ReadWriteLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReadWriteLock) interfaces. However, a StampedLock may be viewed [asReadLock()](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#asReadLock()), [asWriteLock()](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#asWriteLock()), or [asReadWriteLock()](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#asReadWriteLock())in applications requiring only the associated set of functionality.
+
+**Memory Synchronization.** Methods with the effect of successfully locking in any mode have the same memory synchronization effects as a*Lock* action, as described in Chapter 17 of The Java Language Specification. Methods successfully unlocking in write mode have the same memory synchronization effects as an*Unlock*action. In optimistic read usages, actions prior to the most recent write mode unlock action are guaranteed to happen-before those following a tryOptimisticRead only if a later validate returns true; otherwise there is no guarantee that the reads between tryOptimisticRead and validate obtain a consistent snapshot.
+
+**Sample Usage.**The following illustrates some usage idioms in a class that maintains simple two-dimensional points. The sample code illustrates some try/catch conventions even though they are not strictly needed here because no exceptions can occur in their bodies. 
+
+```kotlin
+<code>class Point {
+    private double x, y;
+    private final StampedLock sl = new StampedLock();
+ 
+    // an exclusively locked method
+    void move(double deltaX, double deltaY) {
+      long stamp = sl.writeLock();
+      try {
+        x += deltaX;
+        y += deltaY;
+      } finally {
+        sl.unlockWrite(stamp);
+      }
+    }
+ 
+    // a read-only method
+    // upgrade from optimistic read to read lock
+    double distanceFromOrigin() {
+      long stamp = sl.tryOptimisticRead();
+      try {
+        retryHoldingLock: for (;; stamp = sl.readLock()) {
+          if (stamp == 0L)
+            continue retryHoldingLock;
+          // possibly racy reads
+          double currentX = x;
+          double currentY = y;
+          if (!sl.validate(stamp))
+            continue retryHoldingLock;
+          return Math.hypot(currentX, currentY);
+        }
+      } finally {
+        if (StampedLock.isReadLockStamp(stamp))
+          sl.unlockRead(stamp);
+      }
+    }
+ 
+    // upgrade from optimistic read to write lock
+    void moveIfAtOrigin(double newX, double newY) {
+      long stamp = sl.tryOptimisticRead();
+      try {
+        retryHoldingLock: for (;; stamp = sl.writeLock()) {
+          if (stamp == 0L)
+            continue retryHoldingLock;
+          // possibly racy reads
+          double currentX = x;
+          double currentY = y;
+          if (!sl.validate(stamp))
+            continue retryHoldingLock;
+          if (currentX != 0.0 || currentY != 0.0)
+            break;
+          stamp = sl.tryConvertToWriteLock(stamp);
+          if (stamp == 0L)
+            continue retryHoldingLock;
+          // exclusive access
+          x = newX;
+          y = newY;
+          return;
+        }
+      } finally {
+        if (StampedLock.isWriteLockStamp(stamp))
+          sl.unlockWrite(stamp);
+      }
+    }
+ 
+    // upgrade read lock to write lock
+    void moveIfAtOrigin2(double newX, double newY) {
+      long stamp = sl.readLock();
+      try {
+        while (x == 0.0 &amp;&amp; y == 0.0) {
+          long ws = sl.tryConvertToWriteLock(stamp);
+          if (ws != 0L) {
+            stamp = ws;
+            x = newX;
+            y = newY;
+            break;
+          }
+          else {
+            sl.unlockRead(stamp);
+            stamp = sl.writeLock();
+          }
+        }
+      } finally {
+        sl.unlock(stamp);
+      }
+    }
+  }</code>
+```
+
+## Summary
+
+| Public constructors ||
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
+| [StampedLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#StampedLock())`()` Creates a new lock, initially in unlocked state. |
+
+| Public methods ||
+|---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| open [Lock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock)! | [asReadLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#asReadLock())`()` Returns a plain [Lock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock) view of this StampedLock in which the [Lock.lock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock#lock())method is mapped to [readLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#readLock()), and similarly for other methods. |
+| open [ReadWriteLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReadWriteLock)! | [asReadWriteLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#asReadWriteLock())`()` Returns a [ReadWriteLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReadWriteLock) view of this StampedLock in which the [ReadWriteLock.readLock()](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReadWriteLock#readLock())method is mapped to [asReadLock()](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#asReadLock()), and [ReadWriteLock.writeLock()](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReadWriteLock#writeLock())to [asWriteLock()](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#asWriteLock()). |
+| open [Lock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock)! | [asWriteLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#asWriteLock())`()` Returns a plain [Lock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock) view of this StampedLock in which the [Lock.lock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock#lock())method is mapped to [writeLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#writeLock()), and similarly for other methods. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getReadLockCount](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#getReadLockCount())`()` Queries the number of read locks held for this lock. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLockStamp](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#isLockStamp(kotlin.Long))`(`stamp:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Tells whether a stamp represents holding a lock. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOptimisticReadStamp](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#isOptimisticReadStamp(kotlin.Long))`(`stamp:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Tells whether a stamp represents a successful optimistic read. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadLockStamp](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#isReadLockStamp(kotlin.Long))`(`stamp:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Tells whether a stamp represents holding a lock non-exclusively. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadLocked](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#isReadLocked())`()` Returns`true`if the lock is currently held non-exclusively. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWriteLockStamp](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#isWriteLockStamp(kotlin.Long))`(`stamp:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Tells whether a stamp represents holding a lock exclusively. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWriteLocked](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#isWriteLocked())`()` Returns`true`if the lock is currently held exclusively. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [readLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#readLock())`()` Non-exclusively acquires the lock, blocking if necessary until available. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [readLockInterruptibly](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#readLockInterruptibly())`()` Non-exclusively acquires the lock, blocking if necessary until available or the current thread is interrupted. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#toString())`()` Returns a string identifying this lock, as well as its lock state. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [tryConvertToOptimisticRead](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#tryConvertToOptimisticRead(kotlin.Long))`(`stamp:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` If the lock state matches the given stamp then, atomically, if the stamp represents holding a lock, releases it and returns an observation stamp. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [tryConvertToReadLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#tryConvertToReadLock(kotlin.Long))`(`stamp:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` If the lock state matches the given stamp, atomically performs one of the following actions. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [tryConvertToWriteLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#tryConvertToWriteLock(kotlin.Long))`(`stamp:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` If the lock state matches the given stamp, atomically performs one of the following actions. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [tryOptimisticRead](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#tryOptimisticRead())`()` Returns a stamp that can later be validated, or zero if exclusively locked. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [tryReadLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#tryReadLock())`()` Non-exclusively acquires the lock if it is immediately available. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [tryReadLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#tryReadLock(kotlin.Long,%20java.util.concurrent.TimeUnit))`(`time:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html#)!`)` Non-exclusively acquires the lock if it is available within the given time and the current thread has not been interrupted. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [tryUnlockRead](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#tryUnlockRead())`()` Releases one hold of the read lock if it is held, without requiring a stamp value. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [tryUnlockWrite](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#tryUnlockWrite())`()` Releases the write lock if it is held, without requiring a stamp value. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [tryWriteLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#tryWriteLock())`()` Exclusively acquires the lock if it is immediately available. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [tryWriteLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#tryWriteLock(kotlin.Long,%20java.util.concurrent.TimeUnit))`(`time:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html#)!`)` Exclusively acquires the lock if it is available within the given time and the current thread has not been interrupted. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unlock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#unlock(kotlin.Long))`(`stamp:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` If the lock state matches the given stamp, releases the corresponding mode of the lock. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unlockRead](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#unlockRead(kotlin.Long))`(`stamp:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` If the lock state matches the given stamp, releases the non-exclusive lock. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unlockWrite](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#unlockWrite(kotlin.Long))`(`stamp:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` If the lock state matches the given stamp, releases the exclusive lock. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [validate](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#validate(kotlin.Long))`(`stamp:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns true if the lock has not been exclusively acquired since issuance of the given stamp. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [writeLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#writeLock())`()` Exclusively acquires the lock, blocking if necessary until available. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [writeLockInterruptibly](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#writeLockInterruptibly())`()` Exclusively acquires the lock, blocking if necessary until available or the current thread is interrupted. |
+
+## Public constructors
+
+### StampedLock
+
+Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+StampedLock()
+```
+
+Creates a new lock, initially in unlocked state.
+
+## Public methods
+
+### asReadLock
+
+Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open fun asReadLock(): Lock!
+```
+
+Returns a plain [Lock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock) view of this StampedLock in which the [Lock.lock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock#lock())method is mapped to [readLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#readLock()), and similarly for other methods. The returned Lock does not support a [Condition](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Condition); method [Lock.newCondition()](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock#newCondition())throws`UnsupportedOperationException`.
+
+| Return ||
+|-----------------------------------------------------------------------------------------|----------|
+| [Lock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock)! | the lock |
+
+### asReadWriteLock
+
+Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open fun asReadWriteLock(): ReadWriteLock!
+```
+
+Returns a [ReadWriteLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReadWriteLock) view of this StampedLock in which the [ReadWriteLock.readLock()](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReadWriteLock#readLock())method is mapped to [asReadLock()](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#asReadLock()), and [ReadWriteLock.writeLock()](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReadWriteLock#writeLock())to [asWriteLock()](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#asWriteLock()).
+
+| Return ||
+|-----------------------------------------------------------------------------------------------------------|----------|
+| [ReadWriteLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/ReadWriteLock)! | the lock |
+
+### asWriteLock
+
+Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open fun asWriteLock(): Lock!
+```
+
+Returns a plain [Lock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock) view of this StampedLock in which the [Lock.lock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock#lock())method is mapped to [writeLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#writeLock()), and similarly for other methods. The returned Lock does not support a [Condition](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Condition); method [Lock.newCondition()](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock#newCondition())throws`UnsupportedOperationException`.
+
+| Return ||
+|-----------------------------------------------------------------------------------------|----------|
+| [Lock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock)! | the lock |
+
+### getReadLockCount
+
+Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open fun getReadLockCount(): Int
+```
+
+Queries the number of read locks held for this lock. This method is designed for use in monitoring system state, not for synchronization control.
+
+| Return ||
+|----------------------------------------------------------------------------|-------------------------------|
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the number of read locks held |
+
+### isLockStamp
+
+Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open static fun isLockStamp(stamp: Long): Boolean
+```
+
+Tells whether a stamp represents holding a lock. This method may be useful in conjunction with [tryConvertToReadLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#tryConvertToReadLock(kotlin.Long))and [tryConvertToWriteLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#tryConvertToWriteLock(kotlin.Long)), for example: 
+
+```kotlin
+<code>long stamp = sl.tryOptimisticRead();
+  try {
+    ...
+    stamp = sl.tryConvertToReadLock(stamp);
+    ...
+    stamp = sl.tryConvertToWriteLock(stamp);
+    ...
+  } finally {
+    if (StampedLock.isLockStamp(stamp))
+      sl.unlock(stamp);
+  }</code>
+```
+
+<br />
+
+| Parameters ||
+|---------|-----------------------------------------------------------------------------------------------------------------------------------|
+| `stamp` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):a stamp returned by a previous StampedLock operation |
+
+| Return ||
+|------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true`if the stamp was returned by a successful read-lock or write-lock operation |
+
+### isOptimisticReadStamp
+
+Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open static fun isOptimisticReadStamp(stamp: Long): Boolean
+```
+
+Tells whether a stamp represents a successful optimistic read.
+
+| Parameters ||
+|---------|-----------------------------------------------------------------------------------------------------------------------------------|
+| `stamp` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):a stamp returned by a previous StampedLock operation |
+
+| Return ||
+|------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true`if the stamp was returned by a successful optimistic read operation, that is, a non-zero return from [tryOptimisticRead()](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#tryOptimisticRead())or [tryConvertToOptimisticRead(long)](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#tryConvertToOptimisticRead(kotlin.Long)) |
+
+### isReadLockStamp
+
+Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open static fun isReadLockStamp(stamp: Long): Boolean
+```
+
+Tells whether a stamp represents holding a lock non-exclusively. This method may be useful in conjunction with [tryConvertToReadLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#tryConvertToReadLock(kotlin.Long)), for example: 
+
+```kotlin
+<code>long stamp = sl.tryOptimisticRead();
+  try {
+    ...
+    stamp = sl.tryConvertToReadLock(stamp);
+    ...
+  } finally {
+    if (StampedLock.isReadLockStamp(stamp))
+      sl.unlockRead(stamp);
+  }</code>
+```
+
+<br />
+
+| Parameters ||
+|---------|-----------------------------------------------------------------------------------------------------------------------------------|
+| `stamp` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):a stamp returned by a previous StampedLock operation |
+
+| Return ||
+|------------------------------------------------------------------------------------|---------------------------------------------------------------------|
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true`if the stamp was returned by a successful read-lock operation |
+
+### isReadLocked
+
+Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open fun isReadLocked(): Boolean
+```
+
+Returns`true`if the lock is currently held non-exclusively.
+
+| Return ||
+|------------------------------------------------------------------------------------|-----------------------------------------------------|
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true`if the lock is currently held non-exclusively |
+
+### isWriteLockStamp
+
+Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open static fun isWriteLockStamp(stamp: Long): Boolean
+```
+
+Tells whether a stamp represents holding a lock exclusively. This method may be useful in conjunction with [tryConvertToWriteLock](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#tryConvertToWriteLock(kotlin.Long)), for example: 
+
+```kotlin
+<code>long stamp = sl.tryOptimisticRead();
+  try {
+    ...
+    stamp = sl.tryConvertToWriteLock(stamp);
+    ...
+  } finally {
+    if (StampedLock.isWriteLockStamp(stamp))
+      sl.unlockWrite(stamp);
+  }</code>
+```
+
+<br />
+
+| Parameters ||
+|---------|-----------------------------------------------------------------------------------------------------------------------------------|
+| `stamp` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):a stamp returned by a previous StampedLock operation |
+
+| Return ||
+|------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true`if the stamp was returned by a successful write-lock operation |
+
+### isWriteLocked
+
+Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open fun isWriteLocked(): Boolean
+```
+
+Returns`true`if the lock is currently held exclusively.
+
+| Return ||
+|------------------------------------------------------------------------------------|-------------------------------------------------|
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true`if the lock is currently held exclusively |
+
+### readLock
+
+Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open fun readLock(): Long
+```
+
+Non-exclusively acquires the lock, blocking if necessary until available.
+
+| Return ||
+|------------------------------------------------------------------------------|---------------------------------------------------------|
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | a read stamp that can be used to unlock or convert mode |
+
+### readLockInterruptibly
+
+Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open fun readLockInterruptibly(): Long
+```
+
+Non-exclusively acquires the lock, blocking if necessary until available or the current thread is interrupted. Behavior under interruption matches that specified for method [Lock.lockInterruptibly()](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock#lockInterruptibly()).
+
+| Return ||
+|------------------------------------------------------------------------------|---------------------------------------------------------|
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | a read stamp that can be used to unlock or convert mode |
+
+| Exceptions ||
+|----------------------------------|----------------------------------------------------------------|
+| `java.lang.InterruptedException` | if the current thread is interrupted before acquiring the lock |
+
+### toString
+
+Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open fun toString(): String
+```
+
+Returns a string identifying this lock, as well as its lock state. The state, in brackets, includes the String`"Unlocked"`or the String`"Write-locked"`or the String`"Read-locks:"`followed by the current number of read-locks held.
+
+| Return ||
+|----------------------------------------------------------------------------------|-----------------------------------------------------------|
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | a string identifying this lock, as well as its lock state |
+
+### tryConvertToOptimisticRead
+
+Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open fun tryConvertToOptimisticRead(stamp: Long): Long
+```
+
+If the lock state matches the given stamp then, atomically, if the stamp represents holding a lock, releases it and returns an observation stamp. Or, if an optimistic read, returns it if validated. This method returns zero in all other cases, and so may be useful as a form of "tryUnlock".
+
+| Parameters ||
+|---------|--------------------------------------------------------------------------------------|
+| `stamp` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):a stamp |
+
+| Return ||
+|------------------------------------------------------------------------------|---------------------------------------------------|
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | a valid optimistic read stamp, or zero on failure |
+
+### tryConvertToReadLock
+
+Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open fun tryConvertToReadLock(stamp: Long): Long
+```
+
+If the lock state matches the given stamp, atomically performs one of the following actions. If the stamp represents holding a write lock, releases it and obtains a read lock. Or, if a read lock, returns it. Or, if an optimistic read, acquires a read lock and returns a read stamp only if immediately available. This method returns zero in all other cases.
+
+| Parameters ||
+|---------|--------------------------------------------------------------------------------------|
+| `stamp` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):a stamp |
+
+| Return ||
+|------------------------------------------------------------------------------|----------------------------------------|
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | a valid read stamp, or zero on failure |
+
+### tryConvertToWriteLock
+
+Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open fun tryConvertToWriteLock(stamp: Long): Long
+```
+
+If the lock state matches the given stamp, atomically performs one of the following actions. If the stamp represents holding a write lock, returns it. Or, if a read lock, if the write lock is available, releases the read lock and returns a write stamp. Or, if an optimistic read, returns a write stamp only if immediately available. This method returns zero in all other cases.
+
+| Parameters ||
+|---------|--------------------------------------------------------------------------------------|
+| `stamp` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):a stamp |
+
+| Return ||
+|------------------------------------------------------------------------------|-----------------------------------------|
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | a valid write stamp, or zero on failure |
+
+### tryOptimisticRead
+
+Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open fun tryOptimisticRead(): Long
+```
+
+Returns a stamp that can later be validated, or zero if exclusively locked.
+
+| Return ||
+|------------------------------------------------------------------------------|--------------------------------------------------------------|
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | a valid optimistic read stamp, or zero if exclusively locked |
+
+### tryReadLock
+
+Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open fun tryReadLock(): Long
+```
+
+Non-exclusively acquires the lock if it is immediately available.
+
+| Return ||
+|------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | a read stamp that can be used to unlock or convert mode, or zero if the lock is not available |
+
+### tryReadLock
+
+Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open fun tryReadLock(
+    time: Long, 
+    unit: TimeUnit!
+): Long
+```
+
+Non-exclusively acquires the lock if it is available within the given time and the current thread has not been interrupted. Behavior under timeout and interruption matches that specified for method [Lock.tryLock(long,TimeUnit)](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock#tryLock(kotlin.Long,%20java.util.concurrent.TimeUnit)).
+
+| Parameters ||
+|--------|------------------------------------------------------------------------------------------------------------------------------------|
+| `time` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the maximum time to wait for the lock |
+| `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html#)!:the time unit of the`time`argument |
+
+| Return ||
+|------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | a read stamp that can be used to unlock or convert mode, or zero if the lock is not available |
+
+| Exceptions ||
+|----------------------------------|----------------------------------------------------------------|
+| `java.lang.InterruptedException` | if the current thread is interrupted before acquiring the lock |
+
+### tryUnlockRead
+
+Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open fun tryUnlockRead(): Boolean
+```
+
+Releases one hold of the read lock if it is held, without requiring a stamp value. This method may be useful for recovery after errors.
+
+| Return ||
+|------------------------------------------------------------------------------------|---------------------------------------------|
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true`if the read lock was held, else false |
+
+### tryUnlockWrite
+
+Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open fun tryUnlockWrite(): Boolean
+```
+
+Releases the write lock if it is held, without requiring a stamp value. This method may be useful for recovery after errors.
+
+| Return ||
+|------------------------------------------------------------------------------------|----------------------------------------|
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true`if the lock was held, else false |
+
+### tryWriteLock
+
+Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open fun tryWriteLock(): Long
+```
+
+Exclusively acquires the lock if it is immediately available.
+
+| Return ||
+|------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | a write stamp that can be used to unlock or convert mode, or zero if the lock is not available |
+
+### tryWriteLock
+
+Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open fun tryWriteLock(
+    time: Long, 
+    unit: TimeUnit!
+): Long
+```
+
+Exclusively acquires the lock if it is available within the given time and the current thread has not been interrupted. Behavior under timeout and interruption matches that specified for method [Lock.tryLock(long,TimeUnit)](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock#tryLock(kotlin.Long,%20java.util.concurrent.TimeUnit)).
+
+| Parameters ||
+|--------|------------------------------------------------------------------------------------------------------------------------------------|
+| `time` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the maximum time to wait for the lock |
+| `unit` | [TimeUnit](https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html#)!:the time unit of the`time`argument |
+
+| Return ||
+|------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | a write stamp that can be used to unlock or convert mode, or zero if the lock is not available |
+
+| Exceptions ||
+|----------------------------------|----------------------------------------------------------------|
+| `java.lang.InterruptedException` | if the current thread is interrupted before acquiring the lock |
+
+### unlock
+
+Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open fun unlock(stamp: Long): Unit
+```
+
+If the lock state matches the given stamp, releases the corresponding mode of the lock.
+
+| Parameters ||
+|---------|-------------------------------------------------------------------------------------------------------------------|
+| `stamp` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):a stamp returned by a lock operation |
+
+| Exceptions ||
+|------------------------------------------|------------------------------------------------------------|
+| `java.lang.IllegalMonitorStateException` | if the stamp does not match the current state of this lock |
+
+### unlockRead
+
+Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open fun unlockRead(stamp: Long): Unit
+```
+
+If the lock state matches the given stamp, releases the non-exclusive lock.
+
+| Parameters ||
+|---------|------------------------------------------------------------------------------------------------------------------------|
+| `stamp` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):a stamp returned by a read-lock operation |
+
+| Exceptions ||
+|------------------------------------------|------------------------------------------------------------|
+| `java.lang.IllegalMonitorStateException` | if the stamp does not match the current state of this lock |
+
+### unlockWrite
+
+Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open fun unlockWrite(stamp: Long): Unit
+```
+
+If the lock state matches the given stamp, releases the exclusive lock.
+
+| Parameters ||
+|---------|-------------------------------------------------------------------------------------------------------------------------|
+| `stamp` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):a stamp returned by a write-lock operation |
+
+| Exceptions ||
+|------------------------------------------|------------------------------------------------------------|
+| `java.lang.IllegalMonitorStateException` | if the stamp does not match the current state of this lock |
+
+### validate
+
+Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open fun validate(stamp: Long): Boolean
+```
+
+Returns true if the lock has not been exclusively acquired since issuance of the given stamp. Always returns false if the stamp is zero. Always returns true if the stamp represents a currently held lock. Invoking this method with a value not obtained from [tryOptimisticRead](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/StampedLock#tryOptimisticRead())or a locking method for this lock has no defined effect or result.
+
+| Parameters ||
+|---------|--------------------------------------------------------------------------------------|
+| `stamp` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):a stamp |
+
+| Return ||
+|------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true`if the lock has not been exclusively acquired since issuance of the given stamp; else false |
+
+### writeLock
+
+Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open fun writeLock(): Long
+```
+
+Exclusively acquires the lock, blocking if necessary until available.
+
+| Return ||
+|------------------------------------------------------------------------------|----------------------------------------------------------|
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | a write stamp that can be used to unlock or convert mode |
+
+### writeLockInterruptibly
+
+Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) 
+
+```
+open fun writeLockInterruptibly(): Long
+```
+
+Exclusively acquires the lock, blocking if necessary until available or the current thread is interrupted. Behavior under interruption matches that specified for method [Lock.lockInterruptibly()](https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock#lockInterruptibly()).
+
+| Return ||
+|------------------------------------------------------------------------------|----------------------------------------------------------|
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | a write stamp that can be used to unlock or convert mode |
+
+| Exceptions ||
+|----------------------------------|----------------------------------------------------------------|
+| `java.lang.InterruptedException` | if the current thread is interrupted before acquiring the lock |
